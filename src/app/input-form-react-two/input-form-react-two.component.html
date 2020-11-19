@@ -1,0 +1,79 @@
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Spice Detail Entry (Reactive Two) ....</h4>
+                  
+                        <button type="button" class="close" (click)="activeModal.dismiss('Cross click')">&times;</button>
+                  
+                    </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form [formGroup]="reactFormTw" (ngSubmit)="OnSubmit()">
+
+                        <div class="form-row">
+                            <label for="id">Id</label>
+                            <input 
+                            type="text" 
+                            class="form-control" 
+                            id="id" 
+                            formControlName="id">
+                        </div>
+                        <div class="form-row">
+                            <label for="title">Spice Name</label>
+                            <input 
+                            type="text" 
+                            class="form-control" 
+                            id="title" 
+                            formControlName="title">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="desc">Description</label>
+                            <textarea 
+                            type="text" 
+                            class="form-control" 
+                            id="desc" 
+                            value="" 
+                            rows="3" 
+                            formControlName="desc">
+                            </textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="imgUrl">Image Path</label>
+                            <input 
+                            type="text" 
+                            class="form-control" 
+                            id="imgUrl" 
+                            formControlName="imgUrl"                           
+                            >
+                        </div>
+
+                        <div class="form-row">
+                            <label for="link">Page Link</label>
+                            <input 
+                            type="text" 
+                            class="form-control" 
+                            id="link" 
+                            formControlName="link"
+                          >
+                        </div>
+                        <br>
+                        <button 
+                        class="btn btn-primary" 
+                        type="submit"
+                       >Submit</button>
+
+
+                    </form>
+
+
+
+                </div>
+                <!-- Modal footer -->
+               
+                 <div class="modal-footer">
+                    <!--<button type="button" class="btn btn-danger" (click)="activeModal.dismiss('Cross click')">Close</button>-->
+                </div>
+               
+

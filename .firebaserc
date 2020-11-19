@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ng-complete-guide-f9f50": {
+      "hosting": {
+        "AngiSpicy": [
+          "ng-complete-guide-f9f50"
+        ]
+      }
+    }
+  }
+}

@@ -1,1 +1,53 @@
-<p>input-form works!</p>
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Spice Detail Entry (Template)....</h4>
+                        <button type="button" class="close" (click)="activeModal.dismiss('Cross click')">&times;</button>
+                    </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form (ngSubmit)="onSubmit()" #f="ngForm">
+
+                        <div class="form-row">
+                            <label for="spiId">Id</label>
+                            <input type="text" class="form-control" id="spiId" ngModel name="spiId" value="" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="spiName">Spice Name</label>
+                            <input type="text" class="form-control" id="spiName" ngModel name="spiName" value="" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="spiDesc">Description</label>
+                            <textarea type="text" class="form-control" id="spiDesc" value="" ngModel name="spiDesc"
+                                rows="3" value="" required>
+                                </textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="spiImgPath">Image Path</label>
+                            <input type="text" class="form-control" id="spiImgPath" ngModel name="spiImgPath" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="spiPageLink">Page Link</label>
+                            <input type="text" class="form-control" id="spiPageLink" ngModel name="spiPageLink">
+                        </div>
+                        <br>
+                        <button 
+                        class="btn btn-primary" 
+                        type="submit"
+                        [disabled]='!f.valid'>Submit</button>
+
+
+                    </form>
+
+
+
+                </div>
+                <!-- Modal footer -->
+               
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" (click)="activeModal.dismiss('Cross click')">Close</button>
+                </div>
+               

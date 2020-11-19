@@ -1,0 +1,80 @@
+                <!-- Modal Header -->
+
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Spice Detail Entry (Reactive One) ....</h4>
+                  
+                        <button type="button" class="close" (click)="activeModal.dismiss('Cross click')">&times;</button>
+                  
+                    </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form [formGroup]="reactForm" (ngSubmit)="OnSubmit()">
+
+                        <div class="form-row">
+                            <label for="spiId">Id</label>
+                            <input 
+                            type="text" 
+                            class="form-control" 
+                            id="spiId" 
+                            formControlName="spiId">
+                        </div>
+                        <div class="form-row">
+                            <label for="spiName">Spice Name</label>
+                            <input 
+                            type="text" 
+                            class="form-control" 
+                            id="spiName" 
+                            formControlName="spiName">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="spiDesc">Description</label>
+                            <textarea 
+                            type="text" 
+                            class="form-control" 
+                            id="spiDesc" 
+                            value="" 
+                            rows="3" 
+                            formControlName="spiDesc">
+                            </textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="spiImgPath">Image Path</label>
+                            <input 
+                            type="text" 
+                            class="form-control" 
+                            id="spiImgPath" 
+                            formControlName="spiImgPath"                           
+                            >
+                        </div>
+
+                        <div class="form-row">
+                            <label for="spiPageLink">Page Link</label>
+                            <input 
+                            type="text" 
+                            class="form-control" 
+                            id="spiPageLink" 
+                            formControlName="spiPageLink"
+                          >
+                        </div>
+                        <br>
+                        <button 
+                        class="btn btn-primary" 
+                        type="submit"
+                       >Submit</button>
+
+
+                    </form>
+
+
+
+                </div>
+                <!-- Modal footer -->
+               
+                <div class="modal-footer">
+                   <!--<button type="button" class="btn btn-danger" (click)="activeModal.dismiss('Cross click')">Close</button>--> 
+                </div>
+               

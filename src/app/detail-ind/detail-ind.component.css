@@ -1,0 +1,13 @@
+.chageColor{
+ 
+ background-image: url("/assets/bkground3.JPG");
+ color: beige;   
+}
+.btn {
+    border: 1px solid whitesmoke;
+    background-color: rgb(156, 98, 22);
+    color: rgb(222, 236, 16);
+    padding: 1px 20px;
+    font-size:14px;
+    cursor: pointer;
+  }

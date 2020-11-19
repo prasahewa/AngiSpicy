@@ -1,0 +1,17 @@
+.colorbk{
+    background: royalblue;
+}
+
+.btn {
+    border: 2px solid rgb(59, 23, 23);
+    background-color: rgb(156, 98, 22);
+    color: rgb(222, 236, 16);
+    padding: 8px 20px;
+    font-size:14px;
+    cursor: pointer;
+  }
+
+  .lineColor{
+    border-top: 1px dashed rgb(201, 224, 137);
+  }
+  

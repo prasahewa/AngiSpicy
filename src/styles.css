@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    background-color: chocolate;
+    background-color: rgba(116, 81, 6, 0.733)
 }
+
+.btn {
+    border: 1px solid whitesmoke;
+    background-color: rgb(156, 98, 22);
+    color: rgb(236, 133, 16);
+    padding: 1px 20px;
+    font-size:14px;
+    cursor: pointer;
+  }

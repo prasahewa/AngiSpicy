@@ -1,6 +1,6 @@
  
  
- <div class="row">
+ <div  class="row">
   <!--Nav Bar------------------------------------------------------------>
   <div class="col">
     <div class="continer_fluid">
@@ -48,45 +48,47 @@
     </div>
   </div>
 </div>
-
-<div class="row">
-  <!-- Heading &  Logo ------------------------------------------------------------>
-  <div class="col">
-    <div class="container">
-     <app-logo></app-logo>
+<div class="backGr">
+  <div class="row">
+    <!-- Heading &  Logo ------------------------------------------------------------>
+    <div class="col">
+      <div class="container">
+       <app-logo></app-logo>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <!--Main image (3) -------------------------------------------------------------->
+    <div class="col">
+      <div class="container">
+        <app-carousel> </app-carousel>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container">
+    <!-- Button to Open the Modal -->
+    <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      Open modal
+    </button>-->
+    <button type="button" class="btn btn-lg btn-outline-primary mainBtn mr-1"  (click)="openTmpl()">Template Form</button>
+    <button type="button" class="btn btn-lg btn-outline-primary mainBtn mr-1" (click)="openRact()">Reactive One Form</button>
+    <button type="button" class="btn btn-lg btn-outline-primary mainBtn mr-1" (click)="openRactTw()">Reactive Two Form</button>
+    <button type="button" class="btn btn-lg btn-outline-primary mainBtn" id="refresh" > Refresh Page </button>
+  
+  </div>
+  <!----------------------------------------------------------------------------------->
+  
+  
+  <div class="row">
+    <!--Detail images  ---------------------------------------------------------------->
+    <div class="col">
+      <app-detail-list></app-detail-list>
     </div>
   </div>
 </div>
 
-<div class="row">
-  <!--Main image (3) -------------------------------------------------------------->
-  <div class="col">
-    <div class="container">
-      <app-carousel> </app-carousel>
-    </div>
-  </div>
-</div>
-
-
-<div class="container">
-  <!-- Button to Open the Modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-    Open modal
-  </button>
-
-  <button type="button" id="refresh" class="btn btn-primary">
-    Refresh Page
-  </button>
-
-</div>
-<!----------------------------------------------------------------------------------->
-
-
-<div class="row">
-  <!--Detail images  ---------------------------------------------------------------->
-  <div class="col">
-    <app-detail-list></app-detail-list>
-  </div>
-</div>
 
 

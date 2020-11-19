@@ -1,0 +1,9 @@
+.backGr{
+    background-image: url("/assets/bkground6.JPG");
+    color: beige;   
+    /*background:rgb(107, 43, 43)*/
+   }
+   .mainBtn{
+       color: lightgray;
+       background: lightseagreen;
+   }

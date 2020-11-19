@@ -1,3 +1,18 @@
+<div class="card mx-auto mt-5">
+    <img [src]="spicy.imgUrl" class="card-img-top" alt="...">
+    <div class="card-body chageColor">
+        <h5 class="card-title">{{spicy.title}}</h5>
+        <p class="card-text">{{spicy.desc}}
+        </p>
+        <a [href]="spicy.link" class="btn btn-primary mr-2">Visit Spicy
+            Page</a>
+        <button type="button" class="btn btn-primary mr-1" (click)="onEdit()"> Edit</button>
+        <button type="button" class="btn btn-primary" (click)="onDel()"> Delete</button>
+    </div>
+</div>
+
+
+<!--
 <div class="col-lg-4 col-md-6 col-12">
     <div class="card mx-auto mt-5">
         <img [src]="spicy.imgUrl" class="card-img-top" alt="...">
@@ -10,3 +25,5 @@
         </div>
     </div>
 </div>
+
+-->
