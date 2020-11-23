@@ -1,6 +1,7 @@
 .backGr{
-    background-image: url("/assets/bkground6.JPG");
-    color: beige;   
+    background:white;
+    /*background-image: url("/assets/bkground6.JPG");*/
+    color:black;   
     /*background:rgb(107, 43, 43)*/
    }
    .mainBtn{

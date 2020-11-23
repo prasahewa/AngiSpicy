@@ -13,7 +13,7 @@ when click the pericular item
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
-import { DetailSevices } from '../detail.services';
+import { DetailFireStoreService } from '../detail-fire-store.service';
 import { Spicy } from '../spicy.modle';
 
 @Component({
@@ -28,7 +28,7 @@ export class InputFormReactTwoComponent implements OnInit {
 
   reactFormTw: FormGroup;
   constructor(public activeModal: NgbActiveModal,
-              public detailsServices :DetailSevices) { }
+              public detailsServices :DetailFireStoreService) { }
 
   ngOnInit(): void {
     this.reactFormTw = new FormGroup({
